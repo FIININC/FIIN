@@ -1,0 +1,15 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Muli);
+
+body {
+    overflow-x: hidden;
+    font-family: 'Muli', sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px){
+    
+}

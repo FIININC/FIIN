@@ -1,0 +1,89 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Muli);
+
+#about-us{
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-us-wrapper{
+  width: 80%;
+  height:100vh;
+  margin: auto;
+}
+
+#about-us h1{
+    font-weight: 800 bolder;
+    color: #3a3838;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#about-us h2{
+    font-weight: 700 bolder;
+    color: #28967d;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#about-us div{
+    text-align: center;
+}
+
+#about-us p{
+    font-weight: 300;
+    color: #3a3838;
+    font-size: 16px;
+    padding-left:50px;
+    padding-right:50px;
+    text-align:center;
+}
+
+.about-us-icons{
+    min-height:100px;
+    min-width:100px;
+    background-color:aliceblue;
+    text-align:center;
+    margin-top:20px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px){
+
+    #about-us h1{
+        font-weight: 800 bolder;
+        color: #3a3838;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #about-us h2{
+        font-weight: 700 bolder;
+        color: #28967d;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #about-us p{
+        font-weight: 300;
+        color: #3a3838;
+        font-size: 14px;
+        padding-left:5px;
+        padding-right:5px;
+        text-align:center;
+    }
+
+    .about-us-icons{
+        min-height:50px;
+        min-width:50px;
+        background-color:aliceblue;
+        text-align:center;
+        margin-top:10px;
+    }
+}
