@@ -2,8 +2,9 @@
 
 #team-members{
     font-family: 'Muli', sans-serif;
+    margin-top:75px;
     margin-bottom: 50px;
-    text-align:center;
+    text-align: center;
 }
 
 .team-members-wrapper{

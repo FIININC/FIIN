@@ -11,15 +11,15 @@
 
 #above-the-fold h1{
     font-weight: 800 bolder;
-    color: #3a3838;
+    color: #3a3a3a;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 10px;
 }
 
 #above-the-fold h2{
     font-weight: 800 bolder;
-    color: #3a3838;
+    color: #3a3a3a;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -28,9 +28,14 @@
 #above-the-fold p{
     text-align:center;
     font-weight: 300;
-    color: #3a3838;
+    color: #3a3a3a;
     font-size: 25px;
     margin:0;
+}
+
+#above-the-fold a img{
+    position:absolute;
+    bottom:0;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
