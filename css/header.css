@@ -12,7 +12,6 @@ header{
     left:0;
     right:0;
     z-index:100;
-    box-shadow: 0px 10px 55px -16px rgba(59,59,59,0.66);
 }
 
 .header-wrapper{
@@ -41,6 +40,17 @@ a img{
     height:1.75em;
 }
 
+.navbar-default{
+     transition:500ms ease;
+     background:transparent;
+    background-color: #ffffff;
+    border: 0!important;
+ }
+
+.navbar-default.scrolled{
+    box-shadow: 0px 10px 55px -16px rgba(59,59,59,0.66);
+    background-color: rgba(255,255,255,0.9);
+}
 /*---END---*/
 /*BRANDING --- General*/
 
@@ -75,22 +85,24 @@ header a:hover{
   font-weight: bold;
 }
 
-header a:active{
+header a:active, .active{
   color: #484848;
   font-weight: bold;
 }
 
-header a:active::before{
+header a:active::before, .active::before{
     color:#62dd7c;
     font-weight:bolder;
     content:"[ ";
 }
 
-header a:active::after{
+header a:active::after, .active::after{
     color:#62dd7c;
     font-weight:bolder;
     content:" ]";
 }
+
+
 
 /*---END---*/
 /*NAV --- General*/
