@@ -2,7 +2,7 @@
 
 footer{
     font-family: 'Roboto', sans-serif;
-    font-weight:500;
+    font-weight: 300;
     color:#ffffff;
     text-align:center;
     font-size:14px;
@@ -17,9 +17,21 @@ footer a{
     color:white;
 }
 
-footer p{
+footer div:hover{
+    text-align:center;
     font-weight: bold;
-    margin-top: 20px;
+    transition: all 1s;
+}
+
+footer div:hover img{
+    content: url('../images/emailhover.png');
+    height:2em;
+    transition: all 1s;
+}
+
+footer p{
+    font-weight: 300;
+    margin-top: 0px;
     text-transform: capitalize;
 }
 
