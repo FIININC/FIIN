@@ -2,11 +2,15 @@
 
 #above-the-fold{
     font-family: 'Muli', sans-serif;
-    width: 100%;
-    height: 100vh;
-    background: url(../images/ATF-Background.png) no-repeat center center;
+    min-height: calc(100vh - 4em);
+    background: url(../images/bg.jpg) no-repeat;
+    background-position-y: -11em;
     background-size: cover;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    top: 4em;
+    overflow: auto;
+
 }
 
 #above-the-fold h1{
@@ -15,6 +19,7 @@
     font-size: 40px;
     margin-top: 100px;
     margin-bottom: 10px;
+    width: 65%;
 }
 
 #above-the-fold h2{
@@ -23,14 +28,17 @@
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 50%;
+
 }
 
 #above-the-fold p{
-    text-align:center;
     font-weight: 300;
     color: #3a3a3a;
     font-size: 25px;
     margin:0;
+    width: 35%;
+    font-size: 1.5em;
 }
 
 #above-the-fold a img{

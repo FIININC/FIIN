@@ -43,9 +43,7 @@
 }
 
 .about-us-icons{
-    min-height:100px;
-    min-width:100px;
-    background-color:aliceblue;
+    width: 11em;
     text-align:center;
     margin-top:20px;
 }
