@@ -5,11 +5,15 @@ footer{
     font-weight: 300;
     color:#ffffff;
     text-align:center;
-    font-size:14px;
+    font-size:0.875em;
     background-color: #28967d;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom:10px;
+    padding-top: 1.25em;
+    padding-bottom:0.625em;
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
 }
 
 footer a{
@@ -17,27 +21,35 @@ footer a{
     color:white;
 }
 
+footer a img{
+    height:2em;
+}
+
+footer div{
+    display:inline-block;
+}
+
 footer div:hover{
     text-align:center;
     font-weight: bold;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 footer div:hover img{
     content: url('../images/emailhover.png');
     height:2em;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 footer p{
     font-weight: 300;
-    margin-top: 0px;
+    margin-top: 0em;
     text-transform: capitalize;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 768px){
+@media (max-width: 48em){
 
 
 }

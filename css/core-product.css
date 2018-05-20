@@ -3,8 +3,7 @@
 #core-product{
     width:100%;
     font-family: 'Muli', sans-serif;
-    margin-bottom: 50px;
-    margin-top: 75px;
+    margin-bottom: 3.125em;
     text-align:center;
 }
 
@@ -16,17 +15,17 @@
 #core-product h1{
     font-weight: 800 bolder;
     color: #3a3a3a;
-    font-size: 35px;
-    margin-top: 50px;
+    font-size: 2.188em;
+    margin-top: 3.125em;
 }
 
 #core-product p{
     font-weight: 300;
     color: #3a3a3a;
-    font-size: 20px;
-    padding-left:50px;
+    font-size: 1.25em;
+    padding-left:3.125em;
     text-align:justify;
-    margin-top:20px;
+    margin-top:1.25em;
 }
 
 .core-product-brand{
@@ -56,34 +55,34 @@
 }
 
 #core-product a img{
-    /*margin-top:20px;*/
+    margin-top:1.25em;
     width: 15em;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 768px){
+@media (max-width: 48em){
 
     #core-product h1{
         font-weight: 800 bolder;
         color: #3a3a3a;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-size: 1.563em;
+        margin-top: 0.625em;
+        margin-bottom: 0.625em;
     }
 
     #core-product p{
         font-weight: 300;
         color: #3a3a3a;
-        font-size: 14px;
-        padding-left:5px;
-        padding-right:5px;
+        font-size: 0.875em;
+        padding-left:0.313em;
+        padding-right:0.313em;
         text-align:justify;
     }
 
     .core-product-brand{
         background-color:aliceblue;
         text-align:center;
-        margin-top:10px;
+        margin-top:0.625em;
     }
 }

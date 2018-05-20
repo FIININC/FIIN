@@ -2,7 +2,7 @@
 
 #partners{
     font-family: 'Muli', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 3.125em;
     text-align:center;
 }
 
@@ -13,25 +13,26 @@
 
 #partners h1{
     font-weight: 800 bolder;
-    color: #3a3838;
-    font-size: 35px;
-    margin-top: 5px;
+    text-transform:capitalize;
+    color: #3a3a3a;
+    font-size: 2.188em;
+    margin-top: 0.313em;
 }
 
 .partners-logo{
     height:10em;
     text-align:center;
-    margin-top:20px;
+    margin-top:1.25em;
 }
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 768px){
+@media (max-width: 48em){
 
     #partners h1{
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-size: 1.563em;
+        margin-top: 0.625em;
+        margin-bottom: 0.625em;
     }
 }

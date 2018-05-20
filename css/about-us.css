@@ -3,8 +3,6 @@
 #about-us{
     font-family: 'Muli', sans-serif;
     text-align: center;
-    margin-top:75px;
-    margin-bottom: 50px;
 }
 
 .about-us-wrapper{
@@ -15,18 +13,19 @@
 
 #about-us h1{
     font-weight: 800 bolder;
-    color: #3a3838;
-    font-size: 35px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    text-transform:capitalize;
+    color: #3a3a3a;
+    font-size: 2.188em;
+    margin-top: 1.875em;
+    margin-bottom: 1.875em;
 }
 
 #about-us h2{
     font-weight: 700 bolder;
-    color: #28967d;
-    font-size: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    color: #62dd7c;
+    font-size: 1.563em;
+    margin-top: 0.313em;
+    margin-bottom: 0.313em;
 }
 
 #about-us div{
@@ -35,55 +34,54 @@
 
 #about-us p{
     font-weight: 300;
-    color: #3a3838;
-    font-size: 16px;
-    padding-left:50px;
-    padding-right:50px;
+    color: #3a3a3a;
+    font-size: 1em;
+    padding-left:3.125em;
+    padding-right:3.125em;
     text-align:center;
 }
 
 .about-us-icons{
     height:7em;
-    background-color:aliceblue;
     text-align:center;
-    margin-top:20px;
+    margin-top:1.25em;
 }
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 768px){
+@media (max-width: 48em){
 
     #about-us h1{
         font-weight: 800 bolder;
-        color: #3a3838;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        text-transform:capitalize;
+        color: #3a3a3a;
+        font-size: 1.563em;
+        margin-top: 0.625em;
+        margin-bottom: 0.625em;
     }
 
     #about-us h2{
         font-weight: 700 bolder;
-        color: #28967d;
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        color: #62dd7c;
+        font-size: 1.125em;
+        margin-top: 0.313em;
+        margin-bottom: 0.313em;
     }
 
     #about-us p{
         font-weight: 300;
-        color: #3a3838;
-        font-size: 14px;
-        padding-left:5px;
-        padding-right:5px;
+        color: #3a3a3a;
+        font-size: 0.875em;
+        padding-left:0.313em;
+        padding-right:0.313em;
         text-align:center;
     }
 
     .about-us-icons{
-        min-height:50px;
-        min-width:50px;
-        background-color:aliceblue;
+        min-height:3.125em;
+        min-width:3.125em;
         text-align:center;
-        margin-top:10px;
+        margin-top:0.625em;
     }
 }
