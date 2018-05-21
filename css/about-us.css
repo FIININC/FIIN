@@ -14,7 +14,7 @@
 }
 
 #about-us h1{
-    font-weight: 800 bolder;
+    font-weight: 800;
     color: #3a3838;
     font-size: 35px;
     margin-top: 30px;
@@ -22,8 +22,8 @@
 }
 
 #about-us h2{
-    font-weight: 700 bolder;
-    color: #28967d;
+    font-weight: 700;
+    color: #62dd7c;
     font-size: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -43,9 +43,7 @@
 }
 
 .about-us-icons{
-    min-height:100px;
-    min-width:100px;
-    background-color:aliceblue;
+    width: 11em;
     text-align:center;
     margin-top:20px;
 }
@@ -56,7 +54,7 @@
 @media (max-width: 768px){
 
     #about-us h1{
-        font-weight: 800 bolder;
+        font-weight: 800;
         color: #3a3838;
         font-size: 25px;
         margin-top: 10px;
@@ -64,8 +62,8 @@
     }
 
     #about-us h2{
-        font-weight: 700 bolder;
-        color: #28967d;
+        font-weight: 700;
+        color: #62dd7c;
         font-size: 18px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -83,7 +81,6 @@
     .about-us-icons{
         min-height:50px;
         min-width:50px;
-        background-color:aliceblue;
         text-align:center;
         margin-top:10px;
     }

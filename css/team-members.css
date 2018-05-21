@@ -5,6 +5,7 @@
     margin-top:75px;
     margin-bottom: 50px;
     text-align: center;
+    cursor: pointer;
 }
 
 .team-members-wrapper{
@@ -33,15 +34,10 @@
     margin-top: 5px;
 }
 
-.info{
-    font-weight: 300;
-    color: #3a3838;
-    font-size: 12px;
-    text-align:justify;
-    margin: 2px;
-}
 
 .careers{
+    position: relative;
+    top: 1.75em;
     font-weight: 600;
     color: #3a3838;
     font-size: 16px;
@@ -50,16 +46,16 @@
 }
 
 .careers a{
-    color:#42a159;
+    color:#62dd7c;
     font-weight: bold;
     text-decoration:none;
 }
 
 .team-members-photo{
-    min-height:100px;
-    background-color:aliceblue;
-    text-align:center;
-    margin-top:20px;
+    width: 12em;
+    height: auto;
+    padding-top: 3em;
+    z-index: 10000;
 }
 
 

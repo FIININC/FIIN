@@ -12,7 +12,6 @@ header{
     left:0;
     right:0;
     z-index:100;
-    box-shadow: 0px 10px 55px -16px rgba(59,59,59,0.66);
 }
 
 .header-wrapper{
@@ -41,6 +40,17 @@ a img{
     height:1.75em;
 }
 
+.navbar-default{
+     transition:500ms ease;
+     background:transparent;
+    background-color: #ffffff;
+    border: 0!important;
+ }
+
+.navbar-default.scrolled{
+    box-shadow: 0px 10px 55px -16px rgba(59,59,59,0.66);
+    background-color: rgba(255,255,255,0.9);
+}
 /*---END---*/
 /*BRANDING --- General*/
 
@@ -66,7 +76,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color: #42a159;
+  color: #62dd7c;
   font-weight: bold;
 }
 
@@ -75,27 +85,63 @@ header a:hover{
   font-weight: bold;
 }
 
-header a:active{
+header a:active, .active{
   color: #484848;
   font-weight: bold;
 }
 
-header a:active::before{
+header a:active::before, .active::before{
     color:#62dd7c;
     font-weight:bolder;
     content:"[ ";
 }
 
-header a:active::after{
+header a:active::after, .active::after{
     color:#62dd7c;
     font-weight:bolder;
     content:" ]";
 }
 
+
+
 /*---END---*/
 /*NAV --- General*/
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*.navbar {*/
+    /*border-radius: 0;*/
+    /*border: none;*/
+    /*margin-bottom: 0;*/
+    /*min-height: 80px;*/
+    /*font-size: 0.65em;*/
+    /*float: right;*/
+    /*position: relative;*/
+    /*top: -0.75em;*/
+/*}*/
+
+/*.nav li {*/
+    /*display: inline;*/
+    /*color: white;*/
+/*}*/
+
+ /*.navbar-nav > li > a {*/
+    /*color: #ffffff;*/
+    /*font-size: 1.7em;*/
+    /*font-weight: 300;*/
+    /*padding: 30px 25px 33px 25px;*/
+/*}*/
+
+/*.navbar-nav li a:hover {*/
+    /*transition: 0.7s all linear;*/
+    /*height: 100%;*/
+    /*background: #000;*/
+/*}*/
+
+/*.container navbar-collapse collapse in{*/
+    /*margin-left: auto;*/
+    /*background: rgba(0,0,0,0.8);*/
+    /*height: 100vh;*/
+/*}*/
 
 @media (max-width: 768px){
 
@@ -108,7 +154,7 @@ header a:active::after{
 
     header .logo{
         float: left;
-        height: 35px;
+        height: 2em;
         padding: 5px 5px;
         font-weight:bold;
         font-size: 12px;
@@ -116,7 +162,7 @@ header a:active::after{
     }
 
     a img{
-        height:25px;
+        height:1em;
     }
 
     /*---END---*/

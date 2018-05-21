@@ -19,11 +19,7 @@
 }
 
 .partners-logo{
-    min-height:50px;
-    max-height:100px;
-    min-width:50px;
-    max-width:100px;
-    background-color:aliceblue;
+    width: 10em;
     text-align:center;
     margin-top:20px;
 }

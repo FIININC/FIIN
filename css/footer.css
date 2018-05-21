@@ -2,11 +2,11 @@
 
 footer{
     font-family: 'Roboto', sans-serif;
-    font-weight:500;
+    font-weight: 300;
     color:#ffffff;
     text-align:center;
     font-size:14px;
-    background-color: #28967d;
+    background-color: #62dd7c;
     width: 100%;
     padding-top: 20px;
     padding-bottom:10px;
@@ -14,11 +14,24 @@ footer{
 
 footer a{
     text-decoration:none;
+    color:white;
+}
+
+footer div:hover{
+    text-align:center;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+footer div:hover img{
+    content: url('../images/emailhover.png');
+    height:2em;
+    transition: all 1s;
 }
 
 footer p{
-    font-weight: bold;
-    margin-top: 20px;
+    font-weight: 300;
+    margin-top: 0px;
     text-transform: capitalize;
 }
 
