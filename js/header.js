@@ -1,13 +1,23 @@
 ﻿
 $(document).ready(function(){
+
+
     var win = $(window);
     var allMods = $(".module");
+    var allModsDown = $(".module-down");
     var sections = $('section')
         , nav = $('nav')
         , nav_height = nav.outerHeight();
 
     //don't do slide up animation if the divs are already in view
     allMods.each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("already-visible");
+        }
+    });
+
+    allModsDown.each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
             el.addClass("already-visible");
@@ -26,12 +36,20 @@ $(document).ready(function(){
         return false;
     });
 
+
     win.scroll(function(event) {
         //slide up animation for about us
         allMods.each(function(i, el) {
             var el = $(el);
             if (el.visible(true)) {
                 el.addClass("come-in");
+            }
+        });
+
+        allModsDown.each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("come-in-down");
             }
         });
 
@@ -76,6 +94,7 @@ $(document).ready(function(){
         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
     };
+
 
 })(jQuery);
 
