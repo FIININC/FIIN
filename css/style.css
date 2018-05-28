@@ -66,6 +66,8 @@ header .logo{
 .navbar-header{
     position: relative;
     z-index: 1000000000;
+    position: relative;
+    top: 1em;
 }
 
 header .logo a img{
@@ -84,10 +86,6 @@ header .logo a img{
 .large-nav ul{
     float: right;}
 
-.navbar-header{
-    position: relative;
-    top: 1em;
-}
 
 .navbar-collapse{
     position: relative;
