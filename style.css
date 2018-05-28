@@ -1,8 +1,23 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Muli);
+﻿@font-face {
+    font-family: FIIN;
+    src: url("../fonts/Cera-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FIIN;
+    font-weight: bold;
+    src: url("../fonts/Cera-Bold.otf") format("opentype");
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #ebebeb;
+    line-height: 1.35em;
+}
 
 body {
     overflow-x: hidden;
-<<<<<<< HEAD
     font-family: 'FIIN', sans-serif;
 }
 
@@ -45,6 +60,12 @@ header .logo{
     font-weight:bold;
     font-size: 1em;
     line-height: 1.25em;
+
+}
+
+.navbar-header{
+    position: relative;
+    z-index: 1000000000;
 }
 
 header .logo a img{
@@ -124,13 +145,14 @@ header a:active::after, .active::after{
 }
 
 
-header .logo a:active::before{
+
+a.navbar-brand:active::before{
     font-weight:bolder;
     content:none;
     transition: all 0.5s;
 }
 
-header .logo a:active::after{
+a.navbar-brand:active::after{
     font-weight:bolder;
     content:none;
     transition: all 0.5s;
@@ -412,7 +434,11 @@ header .logo a:active::after{
     font-family: 'FIIN', sans-serif;
     margin-bottom: 3.125em;
     text-align:center;
-    background-color: #ebebeb;
+    background: rgb(244,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(244,246,246,1) 0%, rgba(235,235,235,1) 25%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(244,246,246,1) 0%,rgba(235,235,235,1) 25%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(244,246,246,1) 0%,rgba(235,235,235,1) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f6', endColorstr='#ebebeb',GradientType=0 );
     z-index: 5;
 
 }
@@ -756,6 +782,12 @@ svg#graph{
     overflow-x: hidden;
 }
 
+
+
+
+
+
+
 ul{
     margin: 0;
     padding: 0;
@@ -763,7 +795,7 @@ ul{
 
 #svg1{
     position: relative;
-    top: 12em;
+    /*top: 12em;*/
     color: #000;
 }
 
@@ -893,7 +925,7 @@ h1{
     opacity: 0;
     pointer-events: none;
     transform: translate3d(-50%, -180%, 0);
-    transition: all .5s ease;
+    transition: all 0.75s ease;
     z-index: 100000;
 }
 .link:hover #person1, .link:hover #person2, .link:hover #person3, .link:hover #person4{
@@ -993,6 +1025,48 @@ h1{
         margin: 0;
     }
 
+    /*.navbar-default .navbar-toggle {*/
+         /*border: none;*/
+        /*background: transparent;*/
+        /*position: relative;*/
+        /*bottom: 1em;*/
+        /*float: right!important;*/
+    /*}*/
+
+    /*.navbar-default{*/
+        /*background: none;*/
+    /*}*/
+    /*.navbar-toggle {*/
+        /*float: left !important;*/
+        /*margin-left: 15px;*/
+        /*margin-right: 0;*/
+    /*}*/
+
+    /*.modal-nav-content {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+    /*}*/
+
+    /*.modal-nav-body {*/
+        /*margin-top: 100px;*/
+    /*}*/
+
+    /*.modal-nav-body ul {*/
+        /*list-style-type: none;*/
+        /*color: white;*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*.modal-nav-body ul li {*/
+        /*text-align: center;*/
+        /*font-size: 130%;*/
+        /*padding: 8px;*/
+        /*text-transform: uppercase;*/
+        /*display: block;*/
+        /*width: 100%;*/
+    /*}*/
 
     .large-nav{
     display: none;
