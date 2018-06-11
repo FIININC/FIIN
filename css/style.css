@@ -1,15 +1,52 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Muli);
+﻿@font-face {
+    font-family: FIIN;
+    src: url("../fonts/Cera-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FIIN;
+    font-weight: bold;
+    src: url("../fonts/Cera-Bold.otf") format("opentype");
+}
+
+html,
+{
+    margin: 0;
+    padding: 0;
+    background: #ebebeb;
+    line-height: 1.35em;
+}
 
 body {
     overflow-x: hidden;
-<<<<<<< HEAD
     font-family: 'FIIN', sans-serif;
 }
 
 
 /*HEADER START*/
+#emailsegment .switch {
+    opacity: 0;
+    /*position: absolute;*/
 
+    z-index: 99;
+    position: relative;
+    right: 2em;
+    transition: all 0.5s ease;
+}
 
+#emailsegment .email{
+    position: relative;
+    left: 1.3em;
+    transition: all 0.5s ease;
+}
+
+#emailsegment:hover .email{
+    opacity: 0;
+}
+
+#emailsegment:hover .switch {
+    opacity: 1;
+}
 
 header{
     font-family: 'FIIN', sans-serif;
@@ -45,6 +82,12 @@ header .logo{
     font-weight:bold;
     font-size: 1em;
     line-height: 1.25em;
+
+}
+
+.navbar-header{
+    position: relative;
+    z-index: 1000000000;
 }
 
 header .logo a img{
@@ -65,12 +108,12 @@ header .logo a img{
 
 .navbar-header{
     position: relative;
-    top: 1em;
+    top: 2.25em;
 }
 
 .navbar-collapse{
     position: relative;
-    top: 1em;
+    top: 2.25em;
 }
 
 header a{
@@ -102,6 +145,10 @@ header a:hover{
     transition: all 1s;
 }
 
+header .container{
+    width: 100%;
+}
+
 
 header a:active{
     color: #141616;
@@ -124,18 +171,22 @@ header a:active::after, .active::after{
 }
 
 
-header .logo a:active::before{
+a.navbar-brand:active::before{
     font-weight:bolder;
     content:none;
     transition: all 0.5s;
 }
 
-header .logo a:active::after{
+a.navbar-brand:active::after{
     font-weight:bolder;
     content:none;
     transition: all 0.5s;
 }
 
+header a.active{
+    font-weight: bold!important;
+    color: #000;
+}
 
 
 @media (max-width: 48em){
@@ -147,7 +198,12 @@ header .logo a:active::after{
     header .logo a img{
         height:1.55em;
         position: relative;
-        bottom: 0.75em;
+        top: 0.75em;
+        float: left;
+    }
+
+    #navbar{
+        width: 100%;
     }
 
     /*BRANDING --- Small Devices*/
@@ -162,7 +218,7 @@ header .logo a:active::after{
         line-height: 0.875em;
     }
 
-    a img{height:1em;
+    a img{height:1.25em;
 
     }
 
@@ -306,7 +362,6 @@ header .logo a:active::after{
 
 #about-us h1{
     font-weight: 800;
-    text-transform:capitalize;
     color: #004d4d;
     font-size: 2.188em;
     margin-top: 1.875em;
@@ -329,6 +384,7 @@ header .logo a:active::after{
     font-weight: 300;
     color: #141616;
     font-size: 1em;
+    line-height: 1.25em;
     padding-left:3.125em;
     padding-right:3.125em;
     text-align:center;
@@ -342,23 +398,48 @@ header .logo a:active::after{
 
 
 
-#about-us p.small{
+#about-us div.small{
     margin: 0;
     padding: 0;
     font-size: 0.8em;
     text-align: left;
 }
+#about-us div.small div:first-child{
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    bottom: 0.5em;
+}
 
-#about-us p.small strong{
+
+#about-us div.small div, #about-us div.small div p{
+    text-align: left;
+    width: 77%;
+    display: inline-block;
+    padding: 0;
+    margin: 0.15em;
+    font-size: 1.15em;
+}
+
+#about-us .small strong{
     font-size: 1.25em;
-    color: #004d4d;
-    font-weight: 600;
-    font-style: italic;
+    color: #242424;
+    font-weight: bold;
 }
 
 #pillars{
     position: relative;
-    left: 2em;
+    left: 4em;
+    /*bottom: 0.75em;*/
+}
+
+
+::selection {
+    /*hex code: #009494*/
+    background: rgba(0, 148, 148, 0.29); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: rgba(0, 148, 148, 0.29); /* Gecko Browsers */
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -367,7 +448,6 @@ header .logo a:active::after{
 
     #about-us h1{
         font-weight: 800;
-        text-transform:capitalize;
         color: #004d4d;
         font-size: 1.563em;
         margin-top: 0.625em;
@@ -412,7 +492,11 @@ header .logo a:active::after{
     font-family: 'FIIN', sans-serif;
     margin-bottom: 3.125em;
     text-align:center;
-    background-color: #ebebeb;
+    background: rgb(244,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(244,246,246,1) 0%, rgba(235,235,235,1) 25%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(244,246,246,1) 0%,rgba(235,235,235,1) 25%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(244,246,246,1) 0%,rgba(235,235,235,1) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f6', endColorstr='#ebebeb',GradientType=0 );
     z-index: 5;
 
 }
@@ -433,7 +517,7 @@ header .logo a:active::after{
 #core-product p{
     font-weight: 300;
     color: #141616;
-    font-size: 1.25em;
+    font-size: 1em;
     padding-left:3.125em;
     text-align:justify;
     margin-top:1.25em;
@@ -463,12 +547,15 @@ header .logo a:active::after{
     bottom: 0.75em;
     border: none;
     margin-top: 0;
+    width: 100%;
 }
 
-
+.svg1{
+    top: 12em!important;
+}
 
 .navbar-default img{
-    height: 1em;
+    height: 1.25em;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -512,7 +599,6 @@ header .logo a:active::after{
     font-family: 'FIIN', sans-serif;
     margin-bottom: 5.125em;
     text-align: center;
-    cursor: pointer;
     background: -moz-linear-gradient(top, rgba(235,235,235,0) 0%, rgba(244,246,246,1) 24%, rgba(244,246,246,0.99) 25%, rgba(235,235,235,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(235,235,235,0) 0%,rgba(244,246,246,1) 24%,rgba(244,246,246,0.99) 25%,rgba(235,235,235,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(235,235,235,0) 0%,rgba(244,246,246,1) 24%,rgba(244,246,246,0.99) 25%,rgba(235,235,235,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -528,7 +614,6 @@ header .logo a:active::after{
 
 #team-members h1{
     font-weight: 800 bolder;
-    text-transform:capitalize;
     color: #004d4d;
     font-size: 2.188em;
     margin-top: 0.313em;
@@ -633,7 +718,6 @@ header .logo a:active::after{
 
 #partners h1{
     font-weight: 800 bolder;
-    text-transform:capitalize;
     color: #004d4d;
     font-size: 2.188em;
     margin-top: 0.313em;
@@ -704,13 +788,13 @@ footer div{
 footer div:hover{
     text-align:center;
     font-weight: bold;
-    transition: all 0.5s;
+    transition: all 0.15s;
 }
 
 footer div:hover img{
-    content: url('../images/emailhover.png');
+    /*content: url('../images/emailhover.png');*/
     height:2em;
-    transition: all 0.5s;
+    transition: content 1s;
 }
 
 footer p{
@@ -762,20 +846,14 @@ svg#graph{
 
 
 
-=======
-    font-family: 'Muli', sans-serif;
-}
-
->>>>>>> 169a43ce8adc5d3a607d3715ded3285dc6f6a47d
 ul{
     margin: 0;
     padding: 0;
 }
 
-<<<<<<< HEAD
 #svg1{
     position: relative;
-    top: 12em;
+    top: 10em;
     color: #000;
 }
 
@@ -873,6 +951,7 @@ h1{
     transition: all .7s ease;
     text-decoration: none;
     text-align: center;
+    cursor: default;
 }
 .link img{
     filter: grayscale(100);
@@ -884,7 +963,7 @@ h1{
 .link:hover img{
     filter: none;
     border-radius: 0 0 0 0;
-
+    cursor: pointer;
 }
 
 
@@ -905,7 +984,7 @@ h1{
     opacity: 0;
     pointer-events: none;
     transform: translate3d(-50%, -180%, 0);
-    transition: all .5s ease;
+    transition: all 0.75s ease;
     z-index: 100000;
 }
 .link:hover #person1, .link:hover #person2, .link:hover #person3, .link:hover #person4{
@@ -1006,50 +1085,50 @@ h1{
     }
 
     /*.navbar-default .navbar-toggle {*/
-         /*border: none;*/
-        /*background: transparent;*/
-        /*position: relative;*/
-        /*bottom: 1em;*/
-        /*float: right!important;*/
+    /*border: none;*/
+    /*background: transparent;*/
+    /*position: relative;*/
+    /*bottom: 1em;*/
+    /*float: right!important;*/
     /*}*/
 
     /*.navbar-default{*/
-        /*background: none;*/
+    /*background: none;*/
     /*}*/
     /*.navbar-toggle {*/
-        /*float: left !important;*/
-        /*margin-left: 15px;*/
-        /*margin-right: 0;*/
+    /*float: left !important;*/
+    /*margin-left: 15px;*/
+    /*margin-right: 0;*/
     /*}*/
 
     /*.modal-nav-content {*/
-        /*width: 100%;*/
-        /*height: auto;*/
+    /*width: 100%;*/
+    /*height: auto;*/
     /*}*/
 
     /*.modal-nav-body {*/
-        /*margin-top: 100px;*/
+    /*margin-top: 100px;*/
     /*}*/
 
     /*.modal-nav-body ul {*/
-        /*list-style-type: none;*/
-        /*color: white;*/
-        /*margin: 0;*/
-        /*padding: 0;*/
-        /*width: 100%;*/
+    /*list-style-type: none;*/
+    /*color: white;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
     /*}*/
 
     /*.modal-nav-body ul li {*/
-        /*text-align: center;*/
-        /*font-size: 130%;*/
-        /*padding: 8px;*/
-        /*text-transform: uppercase;*/
-        /*display: block;*/
-        /*width: 100%;*/
+    /*text-align: center;*/
+    /*font-size: 130%;*/
+    /*padding: 8px;*/
+    /*text-transform: uppercase;*/
+    /*display: block;*/
+    /*width: 100%;*/
     /*}*/
 
     .large-nav{
-    display: none;
+        display: none;
     }
 
     .navbar-default, .container{
@@ -1068,7 +1147,7 @@ h1{
 
     nav .container{
         position: relative;
-        top: -0.35em;
+        /*top: -0.35em;*/
         background: transparent;
     }
 
@@ -1086,11 +1165,11 @@ h1{
     .moneymate{
         display: block!important;
     }
-    
+
     .mobile{
         display: block;
     }
-    
+
     .desktop{
         display: none;
     }
@@ -1106,9 +1185,59 @@ h1{
 
 
 
-@media (max-width: 48em){
-=======
-@media (max-width: 768px){
->>>>>>> 169a43ce8adc5d3a607d3715ded3285dc6f6a47d
-    
+@media (min-width: 1281px){
+    body{
+        /*UPDATE THIS NUMBER FOR A BIGGER SCREEN*/
+        /*max-width: 1080px;*/
+        margin-left: 0 auto;
+    }
+
+    header a {
+        font-size: 1.25em;
+    }
+
+    .navbar-default img {
+        height: 1.45em;
+    }
+
+    h2{
+        font-size: 1.15em;
+    }
+
+    .careers{
+        font-size: 1.25em;
+    }
+    #about-us p{
+        font-size: 1.25em;
+        line-height: 1.3em;
+        /*max-width: 80%;*/
+    }
+
+    .about-us-icons{
+        margin-top:1.5em;
+    }
+
+    .small{
+        max-width: 70%;
+        position: relative;
+        left: 5em;
+        padding-bottom: 0.5em;
+    }
+    #about-us p.small{
+        font-size: 1em;
+
+    }
+    .small span{
+        position: relative;
+        left: 7em;
+        padding-bottom: 0.5em;
+    }
+
+    #svg1{
+        top: 0em;
+    }
+
+    #core-product p{
+        font-size: 1.25em;
+    }
 }
